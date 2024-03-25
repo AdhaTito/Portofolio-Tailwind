@@ -1,0 +1,697 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth dark">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Adha Mastito | Portofolio</title>
+    <!-- Favicon -->
+    <link rel="icon" href="./img/logoweb.png">
+    <!-- Flowbite -->
+    <link rel="stylesheet" href="./node_modules/flowbite/dist/flowbite.min.css">
+    <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet" /> -->
+
+    <!-- Style css tailwind -->
+    <link rel="stylesheet" href="./src/output.css">
+    <!-- Font Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet" />
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!-- Icon -->
+    <script src="https://kit.fontawesome.com/2fb6d88e90.js" crossorigin="anonymous"></script>
+</head>
+
+<body class="font-poppins dark:bg-slate-900">
+    <!-- Navbar -->
+    <nav
+        class="sticky top-0 z-50 border-gray-200 shadow-lg dark:shadow-sm dark:shadow-slate-500 bg-white/50 backdrop-blur-sm dark:bg-black/40 dark:backdrop-blur-sm">
+        <div class="flex flex-wrap items-center justify-between max-w-screen-xl p-4 mx-auto">
+            <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
+                <span class="self-center text-xl font-semibold whitespace-nowrap text-mainColor">Adha Mastito</span>
+            </a>
+            <button data-collapse-toggle="navbar-default" type="button"
+                class="inline-flex items-center justify-center w-10 h-10 p-2 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+                aria-controls="navbar-default" aria-expanded="false">
+                <span class="sr-only">Open main menu</span>
+                <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                    viewBox="0 0 17 14">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M1 1h15M1 7h15M1 13h15" />
+                </svg>
+            </button>
+            <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+                <ul
+                    class="flex flex-col p-2 mt-4 font-medium border rounded-lg bg-white/80 dark:bg-black/60 md:bg-transparent md:dark:bg-transparent md:gap-4 md:p-0 border-x-gray-200 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 dark:border-gray-600 ">
+                    <li>
+                        <a href="#"
+                            class="block px-3 py-2 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent hover:text-mainColor md:border-0 md:hover:text-mainColor md:p-0 dark:text-white md:dark:hover:text-mainColor dark:hover:bg-gray-700 dark:hover:text-mainColor md:dark:hover:bg-transparent"
+                            aria-current="page">Home</a>
+                    </li>
+                    <li>
+                        <a href="#about"
+                            class="block px-3 py-2 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent hover:text-mainColor md:border-0 md:hover:text-mainColor md:p-0 dark:text-white md:dark:hover:text-mainColor dark:hover:bg-gray-700 dark:hover:text-mainColor md:dark:hover:bg-transparent">About
+                            Me</a>
+                    </li>
+                    <li>
+                        <a href="#portofolio"
+                            class="block px-3 py-2 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent hover:text-mainColor md:border-0 md:hover:text-mainColor md:p-0 dark:text-white md:dark:hover:text-mainColor dark:hover:bg-gray-700 dark:hover:text-mainColor md:dark:hover:bg-transparent">Portofolio</a>
+                    </li>
+                    <li>
+                        <a href="#skills"
+                            class="block px-3 py-2 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent hover:text-mainColor md:border-0 md:hover:text-mainColor md:p-0 dark:text-white md:dark:hover:text-mainColor dark:hover:bg-gray-700 dark:hover:text-mainColor md:dark:hover:bg-transparent">
+                            Skills</a>
+                    </li>
+                    <li>
+                        <a href="#sertifikat"
+                            class="block px-3 py-2 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent hover:text-mainColor md:border-0 md:hover:text-mainColor md:p-0 dark:text-white md:dark:hover:text-mainColor dark:hover:bg-gray-700 dark:hover:text-mainColor md:dark:hover:bg-transparent">Certificate</a>
+                    </li>
+                    <li>
+                        <a href="#prestasi"
+                            class="block px-3 py-2 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent hover:text-mainColor md:border-0 md:hover:text-mainColor md:p-0 dark:text-white md:dark:hover:text-mainColor dark:hover:bg-gray-700 dark:hover:text-mainColor md:dark:hover:bg-transparent">Experience</a>
+                    </li>
+                    <!-- Ligh / Dark Mode -->
+                    <li class="flex px-3 py-2 my-auto text-white md:px-0 md:py-0">
+                        <span
+                            class="my-auto mr-2 text-xs text-gray-900 rounded md:hover:bg-transparent md:border-0 md:p-0 dark:text-white">Light</span>
+                        <input type="checkbox" class="hidden" id="toggle" />
+                        <label for="toggle">
+                            <div class="flex items-center w-10 h-5 rounded-full cursor-pointer bg-slate-400 ">
+                                <div class="w-4 h-4 bg-white rounded-full m-0.5 dark:translate-x-5 duration-300">
+                                </div>
+                            </div>
+                        </label>
+                        <span
+                            class="my-auto ml-2 text-xs text-gray-900 rounded md:hover:bg-transparent md:border-0 md:p-0 dark:text-white">Dark</span>
+                    </li>
+                    <!-- end light / Dark mode -->
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+
+    <!-- Hero -->
+    <section id="hero" class="pt-16 lg:pt-0">
+        <!-- Blur -->
+        <div class="relative">
+            <div
+                class="absolute w-32 h-32 rounded-full -z-10 right-4 md:top-24 md:right-24 bg-mainColor/20 md:bg-mainColor/40 blur-xl">
+            </div>
+        </div>
+        <!-- Blur -->
+        <div class="relative">
+            <div class="absolute w-32 h-32 rounded-full top-40 left-20 -z-10 bg-mainColor/30 blur-xl"></div>
+        </div>
+        <!-- end blur -->
+
+        <!-- button go to top -->
+        <div class="fixed bottom-4 right-4 md:bottom-10 md:right-20 ">
+            <a href="#">
+                <i
+                    class="z-50 w-12 h-12 p-1 text-center text-white border-4 rounded-full border-mainColor bg-slate-600 dark:text-mainColor fa-solid fa-arrow-up fa-2x"></i>
+            </a>
+        </div>
+        <!-- end bottom go to top -->
+
+        <div class="container">
+            <div class="flex flex-wrap">
+                <div class="self-center px-4 md:w-1/2">
+                    <h1 class="text-3xl font-medium text-mainColor md:text-4xl">
+                        Hello,
+                        <span class="block font-bold dark:text-white text-secondaryColor md:text-5xl">I'am Adha
+                            Mastito</span>
+                    </h1>
+                    <h1 class="mb-4 font-semibold dark:text-slate-200 text-secondaryColor md:text-2xl">
+                        UI/UX Design | Front end Developer | Officer
+                    </h1>
+                    <p class="text-base font-light text-secondaryColor mb-7 dark:text-slate-100">
+                        Tidak ada kata terlambat untuk belajar !!!
+                    </p>
+                    <a href="https://api.whatsapp.com/send/?phone=6282124509598"
+                        class="tracking-wide font-bold text-white bg-mainColor py-[10px] px-8 rounded-lg hover:bg-white hover:border-2 border-2 border-transparent hover:border-mainColor hover:text-mainColor shadow-md shadow-slate-400 duration-500 ease-in-out">Let's
+                        Talk <i class="fas fa-arrow-right "></i></a>
+                </div>
+                <div class="self-end px-4 md:w-1/2 ">
+                    <div class="mt-10">
+                        <img src="./img/Foto Ku.png" alt="" data-aos="fade-left" data-aos-duration="1000"
+                            class="max-w-full mx-auto" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Hero -->
+
+    <!-- Tentang Saya -->
+    <section id="about" class="pt-20 pb-28">
+        <div class="container">
+            <div class="flex flex-wrap">
+                <div class="px-4 mb-10 md:w-1/2">
+                    <h3 class="mb-3 text-2xl font-semibold text-mainColor">About Me</h3>
+                    <h4 class="mb-3 text-2xl font-semibold dark:text-white text-secondaryColor">
+                        Ilmu yang paling hebat adalah ilmu yang bermanfaat
+                    </h4>
+                    <h4 class="text-secondaryColor dark:text-slate-100">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore
+                        unde reiciendis assumenda, dolorem libero enim ratione excepturi,
+                        perspiciatis dolor recusandae libero enim ratione excepturi,
+                        perspiciatis dolor recusandae, Lorem ipsum dolor sit amet
+                        consectetur
+                    </h4>
+                </div>
+                <div class="px-4 mb-10 md:w-1/2">
+                    <h3 class="mb-3 text-xl font-semibold text-secondaryColor mt-11 dark:text-white">
+                        Let's be Friends
+                    </h3>
+                    <h4 class="text-secondaryColor dark:text-slate-100">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore
+                        unde reiciendis assumenda,
+                    </h4>
+                    <div class="flex gap-8 mt-5 ">
+                        <a href="https://www.linkedin.com/in/adha-mastito-32005826a"><i
+                                class="duration-300 ease-in-out fa-brands fa-linkedin fa-2x text-secondaryColor dark:text-white hover:text-mainColor dark:hover:text-mainColor"></i></a>
+                        <a href="https://api.whatsapp.com/send/?phone=6282124509598"><i
+                                class="duration-300 ease-in-out fa-brands fa-square-whatsapp fa-2x text-secondaryColor dark:text-white hover:text-mainColor dark:hover:text-mainColor"></i></a>
+                        <a href="https://www.instagram.com/adhatito_001/"><i
+                                class="duration-300 ease-in-out fa-brands fa-square-instagram fa-2x text-secondaryColor dark:text-white hover:text-mainColor dark:hover:text-mainColor"></i></a>
+                        <a href="https://www.facebook.com/zitcheron.zitcheron/"><i
+                                class="duration-300 ease-in-out fa-brands fa-square-facebook fa-2x text-secondaryColor dark:text-white hover:text-mainColor dark:hover:text-mainColor"></i></a>
+                        <a href="https://github.com/AdhaTito"><i
+                                class="duration-300 ease-in-out fab fa-github-square fa-2x text-secondaryColor dark:text-white hover:text-mainColor dark:hover:text-mainColor"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portofolio -->
+    <section id="portofolio" class="pt-32 pb-28 bg-slate-100 dark:bg-slate-800">
+        <div class="container">
+            <div class="w-full px-4">
+                <div class="max-w-xl mx-auto mb-16 text-center">
+                    <h3 class="mb-4 text-2xl font-semibold text-mainColor ">
+                        Portofolio
+                    </h3>
+                    <p class="font-semibold text-secondaryColor dark:text-white">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rem aut
+                        dicta qui exercitationem necessitatibus.
+                    </p>
+                </div>
+            </div>
+            <div class="grid justify-center grid-cols-1 px-4 sm:grid-cols-2">
+                <div class="p-4 mb-12">
+                    <div class="object-cover overflow-hidden rounded-md shadow-md">
+                        <img src="./img/portofolio (1).png" class="cursor-pointer zoomable" alt="" />
+                    </div>
+                    <h3 class="mt-4 text-xl font-semibold text-secondaryColor dark:text-white">
+                        Pustaka Booking CI3
+                    </h3>
+                    <p class="font-light dark:text-slate-200">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut,
+                        delectus.
+                    </p>
+                </div>
+                <div class="p-4 mb-12">
+                    <div class="object-cover overflow-hidden rounded-md shadow-md">
+                        <img src="./img/Portofolio bootstrap.png" class="cursor-pointer zoomable" alt="" />
+                    </div>
+                    <h3 class="mt-4 text-xl font-semibold text-secondaryColor dark:text-white">
+                        Portofolio Bootstrap
+                    </h3>
+                    <p class="font-light dark:text-slate-200">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut,
+                        delectus.
+                    </p>
+                </div>
+                <div class="p-4 mb-12">
+                    <div class="object-cover overflow-hidden rounded-md shadow-md">
+                        <img src="./img/portofolio (4).png" class="cursor-pointer zoomable" alt="" />
+                    </div>
+                    <h3 class="mt-4 text-xl font-semibold text-secondaryColor dark:text-white">
+                        Daftar Komik CI4 (CRUD)
+                    </h3>
+                    <p class="font-light dark:text-slate-200">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut,
+                        delectus.
+                    </p>
+                </div>
+                <div class="p-4 mb-12">
+                    <div class="object-cover overflow-hidden rounded-md shadow-md">
+                        <img src="./img/Portofolio figma 2.png" class="cursor-pointer zoomable" alt="" />
+                    </div>
+                    <h3 class="mt-4 text-xl font-semibold text-secondaryColor dark:text-white">
+                        Design UI/UX Web Bootcamp
+                    </h3>
+                    <p class="font-light dark:text-slate-200">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut,
+                        delectus.
+                    </p>
+                </div>
+                <div class="p-4 mb-12">
+                    <div class="object-cover overflow-hidden rounded-md shadow-md">
+                        <img src="./img/portofolio (7).png" class="cursor-pointer zoomable" alt="" />
+                    </div>
+                    <h3 class="mt-4 text-xl font-semibold text-secondaryColor dark:text-white">
+                        Design UI/UX Web Properti
+                    </h3>
+                    <p class="font-light dark:text-slate-200">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut,
+                        delectus.
+                    </p>
+                </div>
+                <div class="p-4 mb-12">
+                    <div class="object-cover overflow-hidden rounded-md shadow-md">
+                        <img src="./img/Portofolio silicing web.png" class="cursor-pointer zoomable" alt="" />
+                    </div>
+                    <h3 class="mt-4 text-xl font-semibold text-secondaryColor dark:text-white">
+                        Slicing Design Web Bootcamp
+                    </h3>
+                    <p class="font-light dark:text-slate-200">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut,
+                        delectus.
+                    </p>
+                </div>
+                <div class="p-4 mb-12">
+                    <div class="object-cover overflow-hidden rounded-md shadow-md">
+                        <img src="./img/Portofolio figma 3.png" class="cursor-pointer zoomable" alt="" />
+                    </div>
+                    <h3 class="mt-4 text-xl font-semibold text-secondaryColor dark:text-white">
+                        Design UI/UX App Recruiter Karyawan
+                    </h3>
+                    <p class="font-light dark:text-slate-200">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut,
+                        delectus.
+                    </p>
+                </div>
+                <div class="p-4 mb-12">
+                    <div class="object-cover overflow-hidden rounded-md shadow-md">
+                        <img src="./img/Portofolio figma 4.png" class="cursor-pointer zoomable" alt="" />
+                    </div>
+                    <h3 class="mt-4 text-xl font-semibold text-secondaryColor dark:text-white">
+                        Lorem ipsum dolor sit.
+                    </h3>
+                    <p class="font-light dark:text-slate-200">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut,
+                        delectus.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills"
+        class="pt-32 pb-28 bg-slate-700 dark:bg-slate-500 bg-[url('/img/pattern2.png')] bg-contain bg-repeat">
+        <!-- <div class="relative">
+            <div
+                class="absolute w-20 h-20 rounded-full left-44 md:left-[500px] -top-10 bg-mainColor/40 md:bg-mainColor/50 blur-3xl">
+            </div>
+        </div> -->
+        <div class="relative">
+            <div class="absolute w-full"></div>
+        </div>
+        <div class="contianer ">
+            <div class="w-full px-4 ">
+                <div class="max-w-xl mx-auto text-center">
+                    <h3 class="mb-4 text-2xl font-semibold text-mainColor">
+                        My Skills
+                    </h3>
+                    <p class="text-xl font-medium text-white">
+                        Skill apa saja yang sudah saya pelajari
+                    </p>
+                </div>
+            </div>
+            <div class="flex flex-wrap justify-center w-full gap-20 px-4 md:grid-cols-4">
+                <div class="mt-4 md:pt-10">
+                    <a class="transition grayscale opacity-60 hover:grayscale-0 hover:opacity-100 ">
+                        <img src="./img/html 5.png" class="w-20 mt-10 duration-300 ease-in-out hover:scale-125"
+                            alt="" />
+                    </a>
+                </div>
+                <div class="mt-4 md:pt-10">
+                    <a class="transition grayscale opacity-60 hover:grayscale-0 hover:opacity-100 ">
+                        <img src="./img/icon css 3.png" class="w-20 mt-10 duration-300 ease-in-out hover:scale-125"
+                            alt="" />
+                    </a>
+                </div>
+                <div class="mt-4 md:pt-10">
+                    <a class="transition grayscale opacity-80 hover:grayscale-0 hover:opacity-100 ">
+                        <img src="./img/tailwind.png" class="w-20 py-4 mt-10 duration-300 ease-in-out hover:scale-125"
+                            alt="" />
+                    </a>
+                </div>
+                <div class="mt-4 md:pt-10">
+                    <a class="transition grayscale opacity-60 hover:grayscale-0 hover:opacity-100 ">
+                        <img src="./img/bootstrap.png" class="w-20 mt-10 duration-300 ease-in-out hover:scale-125"
+                            alt="" />
+                    </a>
+                </div>
+                <div class="mt-4 md:pt-10">
+                    <a class="transition grayscale opacity-60 hover:grayscale-0 hover:opacity-100 ">
+                        <img src="./img/AdobePremier.png" class="w-20 mt-10 duration-300 ease-in-out hover:scale-125"
+                            alt="" />
+                    </a>
+                </div>
+                <div class="mt-4 md:pt-10">
+                    <a class="transition grayscale opacity-60 hover:grayscale-0 hover:opacity-100 ">
+                        <img src="./img/photoshop.png" class="w-20 mt-10 duration-300 ease-in-out hover:scale-125"
+                            alt="" />
+                    </a>
+                </div>
+                <div class="mt-4 md:pt-10">
+                    <a class="transition grayscale opacity-60 hover:grayscale-0 hover:opacity-100 ">
+                        <img src="./img/figma.png" class="w-20 mt-10 duration-300 ease-in-out hover:scale-125" alt="" />
+                    </a>
+                </div>
+                <div class="mt-4 md:pt-10">
+                    <a class="transition grayscale opacity-60 hover:grayscale-0 hover:opacity-100 ">
+                        <img src="./img/ms office.png" class="w-20 mt-10 duration-300 ease-in-out hover:scale-125"
+                            alt="" />
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sertifikat -->
+    <section id="sertifikat" class="pt-32 pb-28 bg-slate-100 dark:bg-slate-900">
+
+        <!-- Blur -->
+        <div class="relative">
+            <div class="absolute rounded-full w-52 h-52 right-80 md:-top-20 md:right-0 bg-gradient-to-r from-orange-400
+                to-violet-300 dark:from-mainColor dark:to-white/20 blur-[100px] dark:blur-3xl">
+            </div>
+        </div>
+        <!-- end blur -->
+
+        <div class="container">
+            <div class="w-full px-4">
+                <div class="max-w-xl mx-auto mb-16 text-center">
+                    <h3 class="mb-4 text-2xl font-semibold text-mainColor">
+                        My Certificate
+                    </h3>
+                    <p class="font-semibold text-secondaryColor dark:text-white">
+                        Sertifikat yang sudah Saya selesaikan
+                    </p>
+                </div>
+            </div>
+            <!-- Crousel -->
+            <div class="flex flex-wrap px-4 ">
+                <div id="default-carousel" class="relative w-96 md:w-[600px] mx-auto " data-carousel="slide">
+                    <!-- Carousel wrapper -->
+                    <div class="relative h-72 overflow-hidden rounded-xl md:h-[400px] shadow-lg">
+                        <!-- Item 1 -->
+                        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                            <img src="./img/Sertifikat Lulus Micromentor.jpg"
+                                class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                                alt="..." />
+                        </div>
+                        <!-- Item 2 -->
+                        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                            <img src="./img/Sertifikat Adobe Ilustrator.png"
+                                class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                                alt="..." />
+                        </div>
+                        <!-- Item 3 -->
+                        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                            <img src="./img/Intuit Design for Delight Innovator.jpg"
+                                class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                                alt="..." />
+                        </div>
+                        <!-- Item 4 -->
+                        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                            <img src="./img/Sertifikat Python.png"
+                                class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                                alt="..." />
+                        </div>
+                        <!-- Item 5 -->
+                        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                            <img src="./img/serti coding with mainecraft.jpg"
+                                class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                                alt="..." />
+                        </div>
+                        <!-- Item 6 -->
+                        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                            <img src="./img/Serti GCF Microsoft Word.png"
+                                class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                                alt="..." />
+                        </div>
+                        <!-- Item 7 -->
+                        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                            <img src="./img/Serti Dasar Pemrograman.png"
+                                class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                                alt="..." />
+                        </div>
+                        <!-- Item 8 -->
+                        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                            <img src="./img/Serti Enterprenuership.png"
+                                class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                                alt="..." />
+                        </div>
+                        <!-- Item 9 -->
+                        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                            <img src="./img/InfiniteLearning.png"
+                                class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                                alt="..." />
+                        </div>
+                    </div>
+                    <!-- Slider indicators -->
+                    <div
+                        class="absolute z-30 flex p-1 space-x-3 -translate-x-1/2 bottom-5 left-1/2 rtl:space-x-reverse">
+                        <button type="button" class="w-3 h-3 rounded-full bg-slate-500" aria-current="true"
+                            aria-label="Slide 1" data-carousel-slide-to="0"></button>
+                        <button type="button" class="w-3 h-3 rounded-full bg-slate-500" aria-current="false"
+                            aria-label="Slide 2" data-carousel-slide-to="1"></button>
+                        <button type="button" class="w-3 h-3 rounded-full bg-slate-500" aria-current="false"
+                            aria-label="Slide 3" data-carousel-slide-to="2"></button>
+                        <button type="button" class="w-3 h-3 rounded-full bg-slate-500" aria-current="false"
+                            aria-label="Slide 4" data-carousel-slide-to="3"></button>
+                        <button type="button" class="w-3 h-3 rounded-full bg-slate-500" aria-current="false"
+                            aria-label="Slide 5" data-carousel-slide-to="4"></button>
+                        <button type="button" class="w-3 h-3 rounded-full bg-slate-500" aria-current="false"
+                            aria-label="Slide 5" data-carousel-slide-to="5"></button>
+                        <button type="button" class="w-3 h-3 rounded-full bg-slate-500" aria-current="false"
+                            aria-label="Slide 5" data-carousel-slide-to="6"></button>
+                        <button type="button" class="w-3 h-3 rounded-full bg-slate-500" aria-current="false"
+                            aria-label="Slide 5" data-carousel-slide-to="7"></button>
+                        <button type="button" class="w-3 h-3 rounded-full bg-slate-500" aria-current="false"
+                            aria-label="Slide 5" data-carousel-slide-to="8"></button>
+                    </div>
+                    <!-- Slider controls -->
+                    <button type="button"
+                        class="absolute top-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer start-0 group focus:outline-none"
+                        data-carousel-prev>
+                        <span
+                            class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-slate-400 dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                            <svg class="w-4 h-4 text-black dark:text-gray-800 rtl:rotate-180" aria-hidden="true"
+                                xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="2" d="M5 1 1 5l4 4" />
+                            </svg>
+                            <span class="sr-only">Previous</span>
+                        </span>
+                    </button>
+                    <button type="button"
+                        class="absolute top-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer end-0 group focus:outline-none"
+                        data-carousel-next>
+                        <span
+                            class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-slate-400 dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                            <svg class="w-4 h-4 text-black dark:text-gray-800 rtl:rotate-180" aria-hidden="true"
+                                xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="2" d="m1 9 4-4-4-4" />
+                            </svg>
+                            <span class="sr-only">Next</span>
+                        </span>
+                    </button>
+                </div>
+            </div>
+            <!-- end crousel -->
+
+        </div>
+        <div class="relative">
+            <div class="absolute left-0 hidden w-40 h-40 rounded-full md:block md:bottom-0 md:left-16 bg-gradient-to-l
+                from-orange-400 to-violet-200 dark:from-mainColor dark:to-white/20 blur-[80px] dark:blur-3xl">
+            </div>
+        </div>
+    </section>
+
+    <!-- Prestasi -->
+    <section id="prestasi"
+        class="pt-28 pb-28 bg-slate-700 dark:bg-slate-500 bg-[url('/img/pattern2.png')] bg-contain bg-repeat">
+        <div class="container">
+            <div class="w-full px-4">
+                <div class="max-w-xl mx-auto mb-16 text-center">
+                    <h3 class="mb-4 text-2xl font-semibold text-mainColor">
+                        My Experience
+                    </h3>
+                    <p class="font-semibold text-slate-100 dark:text-white">
+                        Pengalaman yang pernah saya lakukan selama saya belajar di Universitas Bina Sarana Informatika
+                    </p>
+                </div>
+            </div>
+            <div class="flex flex-wrap justify-center gap-10 p-4 mx-auto text-secondaryColor">
+                <div
+                    class="overflow-hidden font-semibold text-center transition-all duration-500 shadow-lg w-96 lg:w-96 md:w-80 sm:w-60 rounded-xl dark:bg-white bg-slate-100 hover:bg-mainColor hover:scale-105 hover:text-slate-100 dark:hover:bg-mainColor">
+                    <img src="./img/Sertifikat Lulus Micromentor.jpg" class="object-cover w-full" alt="">
+                    <h3 class="mt-4 text-xl lg:text-2xl me-4">Micromentor</h3>
+                    <p class="p-4 mb-4 text-sm font-medium"> Disini Saya terhubung menjadi Mentor yang membantu
+                        para UMKM di Indonesia agar membantu dalam usahannya dalam perkembangan Industri 4.0
+                    </p>
+                </div>
+                <div
+                    class="overflow-hidden font-semibold text-center transition-all duration-500 shadow-lg w-96 lg:w-96 md:w-80 sm:w-60 rounded-xl dark:bg-white bg-slate-100 hover:bg-mainColor hover:scale-105 hover:text-slate-100 dark:hover:bg-mainColor">
+                    <img src="./img/Intuit Design for Delight Innovator.jpg" class="object-cover w-full" alt="">
+                    <h3 class="mt-4 text-xl lg:text-2xl me-4">UI/UX Design</h3>
+                    <p class="p-4 mb-4 text-sm font-medium">Menyelesaikan Ujian Sertifikat Intuit Design For Delight
+                        atau UI/UX
+                        Design pada program Studi Independen di <span class="text-blue-500 underline"><a
+                                href="https://myedusolve.com/">MyEduSolve</a></span>
+                    </p>
+                </div>
+                <div
+                    class="overflow-hidden font-semibold text-center transition-all duration-500 shadow-lg w-96 lg:w-96 md:w-80 sm:w-60 rounded-xl dark:bg-white bg-slate-100 hover:bg-mainColor hover:scale-105 hover:text-slate-100 dark:hover:bg-mainColor">
+                    <img src="./img/InfiniteLearning.png" class="object-cover w-full" alt="">
+                    <h3 class="mt-4 text-xl lg:text-2xl me-4">Bootcamp FrontEnd</h3>
+                    <p class="p-4 mb-4 text-sm font-medium"> Menyelesaikan Bootcamp FrontEnd Web Development di <span
+                            class="text-blue-500 underline"><a href="https://www.infinitelearning.id/">Infinite
+                                Learning</a></span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- footer -->
+    <footer class="text-white dark:bg-gray-900">
+        <div class="w-full max-w-screen-xl p-4 py-6 mx-auto lg:py-8">
+            <div class="md:flex md:justify-between">
+                <div class="mb-6 md:mb-0">
+                    <a href="#" class="flex items-center">
+                        <img src="./img/logo am2.jpg" class="h-8 rounded-full me-3" alt="FlowBite Logo" />
+                        <span
+                            class="self-center text-2xl font-semibold text-secondaryColor whitespace-nowrap dark:text-white">Adha
+                            Mastito</span>
+                    </a>
+                    <h1 class="mt-2 font-semibold dark:text-slate-300 text-slate-500 md:ml-11">
+                        adhamastito55@gmail.com</h1>
+                    <h1 class="w-1/2 mt-2 text-sm font-medium md:ml-11 dark:text-slate-300 text-slate-500">Jl.
+                        Kemandoran 1
+                        No.40, 12210,
+                        Jakarta Selatan</h1>
+                </div>
+                <div class="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
+                    <div>
+                        <h2 class="mb-6 text-sm font-semibold uppercase text-mainColor ">Resources</h2>
+                        <ul class="font-medium text-slate-500 dark:text-gray-400">
+                            <li class="mb-4">
+                                <a href="https://flowbite.com/" class="hover:underline">Flowbite</a>
+                            </li>
+                            <li>
+                                <a href="https://tailwindcss.com/" class="hover:underline">Tailwind CSS</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h2 class="mb-6 text-sm font-semibold uppercase text-mainColor">Follow us</h2>
+                        <ul class="font-medium text-slate-500 dark:text-gray-400">
+                            <li class="mb-4">
+                                <a href="https://github.com/themesberg/flowbite" class="hover:underline ">Github</a>
+                            </li>
+                            <li>
+                                <a href="https://discord.gg/4eeurUVvTy" class="hover:underline">Discord</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h2 class="mb-6 text-sm font-semibold uppercase text-mainColor">Legal</h2>
+                        <ul class="font-medium text-slate-500 dark:text-gray-400">
+                            <li class="mb-4">
+                                <a href="https://www.termsfeed.com/live/9f62ba17-d3cb-442a-b99e-32163c4d494d"
+                                    class="hover:underline">Privacy Policy</a>
+                            </li>
+                            <li>
+                                <a href="https://www.termsfeed.com/live/6139f691-e3a0-4865-b066-1faeb7846a70"
+                                    class="hover:underline">Terms &amp; Conditions</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
+            <div class="sm:flex sm:items-center sm:justify-between">
+                <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2024 <a href="#"
+                        class="hover:underline">Adha Mastito</a>. All Rights Reserved.
+                </span>
+                <div class="flex mt-4 sm:justify-center sm:mt-0">
+                    <a href="#" class="text-gray-400 hover:text-mainColor dark:hover:text-white">
+                        <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                            viewBox="0 0 8 19">
+                            <path fill-rule="evenodd"
+                                d="M6.135 3H8V0H6.135a4.147 4.147 0 0 0-4.142 4.142V6H0v3h2v9.938h3V9h2.021l.592-3H5V3.591A.6.6 0 0 1 5.592 3h.543Z"
+                                clip-rule="evenodd" />
+                        </svg>
+                        <span class="sr-only">Facebook page</span>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-mainColor dark:hover:text-white ms-5">
+                        <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                            viewBox="0 0 21 16">
+                            <path
+                                d="M16.942 1.556a16.3 16.3 0 0 0-4.126-1.3 12.04 12.04 0 0 0-.529 1.1 15.175 15.175 0 0 0-4.573 0 11.585 11.585 0 0 0-.535-1.1 16.274 16.274 0 0 0-4.129 1.3A17.392 17.392 0 0 0 .182 13.218a15.785 15.785 0 0 0 4.963 2.521c.41-.564.773-1.16 1.084-1.785a10.63 10.63 0 0 1-1.706-.83c.143-.106.283-.217.418-.33a11.664 11.664 0 0 0 10.118 0c.137.113.277.224.418.33-.544.328-1.116.606-1.71.832a12.52 12.52 0 0 0 1.084 1.785 16.46 16.46 0 0 0 5.064-2.595 17.286 17.286 0 0 0-2.973-11.59ZM6.678 10.813a1.941 1.941 0 0 1-1.8-2.045 1.93 1.93 0 0 1 1.8-2.047 1.919 1.919 0 0 1 1.8 2.047 1.93 1.93 0 0 1-1.8 2.045Zm6.644 0a1.94 1.94 0 0 1-1.8-2.045 1.93 1.93 0 0 1 1.8-2.047 1.918 1.918 0 0 1 1.8 2.047 1.93 1.93 0 0 1-1.8 2.045Z" />
+                        </svg>
+                        <span class="sr-only">Discord community</span>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-mainColor dark:hover:text-white ms-5">
+                        <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                            viewBox="0 0 20 17">
+                            <path fill-rule="evenodd"
+                                d="M20 1.892a8.178 8.178 0 0 1-2.355.635 4.074 4.074 0 0 0 1.8-2.235 8.344 8.344 0 0 1-2.605.98A4.13 4.13 0 0 0 13.85 0a4.068 4.068 0 0 0-4.1 4.038 4 4 0 0 0 .105.919A11.705 11.705 0 0 1 1.4.734a4.006 4.006 0 0 0 1.268 5.392 4.165 4.165 0 0 1-1.859-.5v.05A4.057 4.057 0 0 0 4.1 9.635a4.19 4.19 0 0 1-1.856.07 4.108 4.108 0 0 0 3.831 2.807A8.36 8.36 0 0 1 0 14.184 11.732 11.732 0 0 0 6.291 16 11.502 11.502 0 0 0 17.964 4.5c0-.177 0-.35-.012-.523A8.143 8.143 0 0 0 20 1.892Z"
+                                clip-rule="evenodd" />
+                        </svg>
+                        <span class="sr-only">Twitter page</span>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-mainColor dark:hover:text-white ms-5">
+                        <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                            viewBox="0 0 20 20">
+                            <path fill-rule="evenodd"
+                                d="M10 .333A9.911 9.911 0 0 0 6.866 19.65c.5.092.678-.215.678-.477 0-.237-.01-1.017-.014-1.845-2.757.6-3.338-1.169-3.338-1.169a2.627 2.627 0 0 0-1.1-1.451c-.9-.615.07-.6.07-.6a2.084 2.084 0 0 1 1.518 1.021 2.11 2.11 0 0 0 2.884.823c.044-.503.268-.973.63-1.325-2.2-.25-4.516-1.1-4.516-4.9A3.832 3.832 0 0 1 4.7 7.068a3.56 3.56 0 0 1 .095-2.623s.832-.266 2.726 1.016a9.409 9.409 0 0 1 4.962 0c1.89-1.282 2.717-1.016 2.717-1.016.366.83.402 1.768.1 2.623a3.827 3.827 0 0 1 1.02 2.659c0 3.807-2.319 4.644-4.525 4.889a2.366 2.366 0 0 1 .673 1.834c0 1.326-.012 2.394-.012 2.72 0 .263.18.572.681.475A9.911 9.911 0 0 0 10 .333Z"
+                                clip-rule="evenodd" />
+                        </svg>
+                        <span class="sr-only">GitHub account</span>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-mainColor dark:hover:text-white ms-5">
+                        <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                            viewBox="0 0 20 20">
+                            <path fill-rule="evenodd"
+                                d="M10 0a10 10 0 1 0 10 10A10.009 10.009 0 0 0 10 0Zm6.613 4.614a8.523 8.523 0 0 1 1.93 5.32 20.094 20.094 0 0 0-5.949-.274c-.059-.149-.122-.292-.184-.441a23.879 23.879 0 0 0-.566-1.239 11.41 11.41 0 0 0 4.769-3.366ZM8 1.707a8.821 8.821 0 0 1 2-.238 8.5 8.5 0 0 1 5.664 2.152 9.608 9.608 0 0 1-4.476 3.087A45.758 45.758 0 0 0 8 1.707ZM1.642 8.262a8.57 8.57 0 0 1 4.73-5.981A53.998 53.998 0 0 1 9.54 7.222a32.078 32.078 0 0 1-7.9 1.04h.002Zm2.01 7.46a8.51 8.51 0 0 1-2.2-5.707v-.262a31.64 31.64 0 0 0 8.777-1.219c.243.477.477.964.692 1.449-.114.032-.227.067-.336.1a13.569 13.569 0 0 0-6.942 5.636l.009.003ZM10 18.556a8.508 8.508 0 0 1-5.243-1.8 11.717 11.717 0 0 1 6.7-5.332.509.509 0 0 1 .055-.02 35.65 35.65 0 0 1 1.819 6.476 8.476 8.476 0 0 1-3.331.676Zm4.772-1.462A37.232 37.232 0 0 0 13.113 11a12.513 12.513 0 0 1 5.321.364 8.56 8.56 0 0 1-3.66 5.73h-.002Z"
+                                clip-rule="evenodd" />
+                        </svg>
+                        <span class="sr-only">Dribbble account</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Main JS -->
+    <script src="./src/main.js"></script>
+
+    <!-- JS Flowbite -->
+    <script src="./node_modules/flowbite/dist/flowbite.min.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script> -->
+
+    <!-- JS AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+</body>
+
+</html>
