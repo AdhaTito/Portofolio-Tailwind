@@ -10,10 +10,25 @@
     right: 0;
     bottom: 0;
     margin: auto;
-    width: 80%;
+    width: 75%;
     /* Sesuaikan lebar gambar yang memperbesar */
     height: auto;
     border-radius: 5px;
     z-index: 1;
   }
 }
+
+/* @layer components {
+}
+
+@layer utilities {
+  .card {
+    @apply text-4xl;
+  }
+} */
+
+/* @layer components {
+  h1 {
+    font-size: xx-large;
+  }
+} */
