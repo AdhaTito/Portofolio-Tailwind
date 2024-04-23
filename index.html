@@ -28,7 +28,7 @@
 <body class="font-poppins dark:bg-slate-900">
     <!-- Navbar -->
     <nav
-        class="sticky top-0 z-50 border-gray-200 shadow-lg dark:shadow-sm dark:shadow-slate-500 bg-white/50 backdrop-blur-sm dark:bg-black/40 dark:backdrop-blur-sm">
+        class="fixed top-0 z-50 w-full border-gray-200 shadow-lg dark:shadow-sm dark:shadow-slate-500 bg-white/50 backdrop-blur-sm dark:bg-black/40 dark:backdrop-blur-sm">
         <div class="flex flex-wrap items-center justify-between max-w-screen-xl p-4 mx-auto">
             <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
                 <span class="self-center text-xl font-semibold whitespace-nowrap text-mainColor">Adha Mastito</span>
@@ -45,7 +45,7 @@
             </button>
             <div class="hidden w-full md:block md:w-auto" id="navbar-default">
                 <ul
-                    class="flex flex-col p-2 mt-4 font-medium border rounded-lg bg-white/80 dark:bg-black/60 md:bg-transparent md:dark:bg-transparent md:gap-4 md:p-0 border-x-gray-200 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 dark:border-gray-600 ">
+                    class="flex flex-col p-2 mt-4 text-sm font-medium border rounded-lg bg-white/80 dark:bg-black/60 md:bg-transparent md:dark:bg-transparent md:gap-4 md:p-0 border-x-gray-200 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 dark:border-gray-600 ">
                     <li>
                         <a href="#"
                             class="block px-3 py-2 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent hover:text-mainColor md:border-0 md:hover:text-mainColor md:p-0 dark:text-white md:dark:hover:text-mainColor dark:hover:bg-gray-700 dark:hover:text-mainColor md:dark:hover:bg-transparent"
@@ -73,10 +73,15 @@
                         <a href="#prestasi"
                             class="block px-3 py-2 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent hover:text-mainColor md:border-0 md:hover:text-mainColor md:p-0 dark:text-white md:dark:hover:text-mainColor dark:hover:bg-gray-700 dark:hover:text-mainColor md:dark:hover:bg-transparent">Experience</a>
                     </li>
+                    <li>
+                        <a href="#contact"
+                            class="block px-3 py-2 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent hover:text-mainColor md:border-0 md:hover:text-mainColor md:p-0 dark:text-white md:dark:hover:text-mainColor dark:hover:bg-gray-700 dark:hover:text-mainColor md:dark:hover:bg-transparent">Contact</a>
+                    </li>
                     <!-- Ligh / Dark Mode -->
                     <li class="flex px-3 py-2 my-auto text-white md:px-0 md:py-0">
                         <span
-                            class="my-auto mr-2 text-xs text-gray-900 rounded md:hover:bg-transparent md:border-0 md:p-0 dark:text-white">Light</span>
+                            class="my-auto mr-2 text-xs rounded text-mainColor md:hover:bg-transparent md:border-0 md:p-0 dark:text-white"><i
+                                class="fa-solid fa-sun fa-xl"></i></span>
                         <input type="checkbox" class="hidden" id="toggle" />
                         <label for="toggle">
                             <div class="flex items-center w-10 h-5 rounded-full cursor-pointer bg-slate-400 ">
@@ -85,7 +90,8 @@
                             </div>
                         </label>
                         <span
-                            class="my-auto ml-2 text-xs text-gray-900 rounded md:hover:bg-transparent md:border-0 md:p-0 dark:text-white">Dark</span>
+                            class="my-auto ml-2 text-xs text-gray-900 rounded md:hover:bg-transparent md:border-0 md:p-0 dark:text-mainColor"><i
+                                class="fa-solid fa-moon fa-xl"></i></span>
                     </li>
                     <!-- end light / Dark mode -->
                 </ul>
@@ -96,7 +102,7 @@
 
 
     <!-- Hero -->
-    <section id="hero" class="pt-16 lg:pt-0">
+    <section id="hero" class="pt-32 lg:pt-16">
         <!-- Blur -->
         <div class="relative">
             <div
@@ -130,7 +136,8 @@
                         UI/UX Design | Front end Developer | Officer
                     </h1>
                     <p class="text-base font-light text-secondaryColor mb-7 dark:text-slate-100">
-                        Tidak ada kata terlambat untuk belajar !!!
+                        "Kegagalan adalah kesempatan untuk memulai lagi dengan
+                        <span class="font-medium text-mainColor">cerdas</span>."
                     </p>
                     <a href="https://api.whatsapp.com/send/?phone=6282124509598"
                         class="tracking-wide font-bold text-white bg-mainColor py-[10px] px-8 rounded-lg hover:bg-white hover:border-2 border-2 border-transparent hover:border-mainColor hover:text-mainColor shadow-md shadow-slate-400 duration-500 ease-in-out">Let's
@@ -156,12 +163,13 @@
                     <h4 class="mb-3 text-2xl font-semibold dark:text-white text-secondaryColor">
                         Ilmu yang paling hebat adalah ilmu yang bermanfaat
                     </h4>
-                    <h4 class="text-secondaryColor dark:text-slate-100">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore
-                        unde reiciendis assumenda, dolorem libero enim ratione excepturi,
-                        perspiciatis dolor recusandae libero enim ratione excepturi,
-                        perspiciatis dolor recusandae, Lorem ipsum dolor sit amet
-                        consectetur
+                    <h4 class="text-justify text-secondaryColor dark:text-slate-100">
+                        “Saya merupakan mahasiswa semester 8 Program Studi Sistem Informasi dengan keahlian yang saya
+                        miliki yaitu Front-End Developer, UI/UX Design dan berpengalaman sebagai Mentor Online di
+                        Micromentor. Sertifikat-sertifikat yang sudah saya selesaikan adalah Programming Essentials in
+                        Python, Design For Delight (UI/UX), Adobe Ilustrator, lalu saya juga mengikuti bootcamp dari
+                        Infinite Learning (Front-End Development), Soft Skill yang saya miliki Problem Solving, Detail
+                        Oriented, Kreative, kemampuan belajar mandiri, kerjasama tim, dan Mudah beradaptasi."
                     </h4>
                 </div>
                 <div class="px-4 mb-10 md:w-1/2">
@@ -169,8 +177,7 @@
                         Let's be Friends
                     </h3>
                     <h4 class="text-secondaryColor dark:text-slate-100">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore
-                        unde reiciendis assumenda,
+                        Mari terhubung dengan Saya :)
                     </h4>
                     <div class="flex gap-8 mt-5 ">
                         <a href="https://www.linkedin.com/in/adha-mastito-32005826a"><i
@@ -321,7 +328,7 @@
                         My Skills
                     </h3>
                     <p class="text-xl font-medium text-white">
-                        Skill apa saja yang sudah saya pelajari
+                        Skill yang di Kuasai
                     </p>
                 </div>
             </div>
@@ -572,29 +579,68 @@
         </div>
     </section>
 
+    <!-- Contact Section Start -->
+    <section id="contact" class="flex pb-32 pt-36 dark:bg-slate-900">
+        <div class="container justify-center">
+            <div class="w-full px-4">
+                <div class="max-w-xl mx-auto mb-16 text-center">
+                    <h4 class="mb-2 text-lg font-semibold text-mainColor">Contact</h4>
+                    <h2 class="mb-4 text-3xl font-bold text-dark dark:text-white sm:text-4xl lg:text-5xl">Hubungi Kami
+                    </h2>
+                    <p class="text-sm font-medium text-secondary dark:text-white md:text-lg">Ingin menghubungi melalui
+                        email ? <span class="text-mainColor">Isi Form dibawah ini</span>
+                    </p>
+                </div>
+            </div>
+
+            <form action="https://formsubmit.co/adhamastito55@gmail.com" method="POST">
+                <div class="w-full lg:mx-auto lg:w-2/3">
+                    <div class="w-full px-4 mb-8">
+                        <label for="name" class="text-base font-bold text-mainColor ">Nama</label>
+                        <input required type="text" id="name" name="name"
+                            class="w-full p-3 rounded-md bg-slate-200 text-dark focus:border-mainColor focus:outline-none focus:ring-1 focus:ring-mainColor" />
+                    </div>
+                    <div class="w-full px-4 mb-8">
+                        <label for="email" class="text-base font-bold text-mainColor">Email</label>
+                        <input required="email" type="email" id="email" name="email"
+                            class="w-full p-3 rounded-md bg-slate-200 text-dark focus:border-mainColor focus:outline-none focus:ring-1 focus:ring-mainColor" />
+                    </div>
+                    <div class="w-full px-4 mb-8">
+                        <label for="message" class="text-base font-bold text-mainColor">Pesan</label>
+                        <textarea required type="textarea" id="message" name="message"
+                            class="w-full h-32 p-3 rounded-md bg-slate-200 text-dark focus:border-mainColor focus:outline-none focus:ring-1 focus:ring-mainColor"></textarea>
+                    </div>
+                    <div class="w-full px-4">
+                        <button type="submit"
+                            class="w-full px-8 py-2 text-base font-semibold text-white transition duration-500 rounded-md bg-mainColor hover:opacity-80 hover:shadow-lg">Kirim</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+    <!-- Contact Section End -->
 
     <!-- footer -->
-    <footer class="text-white dark:bg-gray-900">
+    <footer class="text-white bg-slate-800 dark:bg-slate-500">
         <div class="w-full max-w-screen-xl p-4 py-6 mx-auto lg:py-8">
             <div class="md:flex md:justify-between">
                 <div class="mb-6 md:mb-0">
                     <a href="#" class="flex items-center">
                         <img src="./img/logo am2.jpg" class="h-8 rounded-full me-3" alt="FlowBite Logo" />
-                        <span
-                            class="self-center text-2xl font-semibold text-secondaryColor whitespace-nowrap dark:text-white">Adha
+                        <span class="self-center text-2xl font-semibold text-white whitespace-nowrap">Adha
                             Mastito</span>
                     </a>
-                    <h1 class="mt-2 font-semibold dark:text-slate-300 text-slate-500 md:ml-11">
+                    <h1 class="mt-2 font-semibold text-slate-300 md:ml-11">
                         adhamastito55@gmail.com</h1>
-                    <h1 class="w-1/2 mt-2 text-sm font-medium md:ml-11 dark:text-slate-300 text-slate-500">Jl.
+                    <h1 class="w-1/2 mt-2 text-sm font-medium md:ml-11 text-slate-300">Jl.
                         Kemandoran 1
                         No.40, 12210,
                         Jakarta Selatan</h1>
                 </div>
                 <div class="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
                     <div>
-                        <h2 class="mb-6 text-sm font-semibold uppercase text-mainColor ">Resources</h2>
-                        <ul class="font-medium text-slate-500 dark:text-gray-400">
+                        <h2 class="mb-6 text-sm font-bold uppercase text-mainColor ">Resources</h2>
+                        <ul class="font-medium text-slate-300">
                             <li class="mb-4">
                                 <a href="https://flowbite.com/" class="hover:underline">Flowbite</a>
                             </li>
@@ -604,8 +650,8 @@
                         </ul>
                     </div>
                     <div>
-                        <h2 class="mb-6 text-sm font-semibold uppercase text-mainColor">Follow us</h2>
-                        <ul class="font-medium text-slate-500 dark:text-gray-400">
+                        <h2 class="mb-6 text-sm font-bold uppercase text-mainColor">Follow us</h2>
+                        <ul class="font-medium text-slate-300">
                             <li class="mb-4">
                                 <a href="https://github.com/themesberg/flowbite" class="hover:underline ">Github</a>
                             </li>
@@ -615,8 +661,8 @@
                         </ul>
                     </div>
                     <div>
-                        <h2 class="mb-6 text-sm font-semibold uppercase text-mainColor">Legal</h2>
-                        <ul class="font-medium text-slate-500 dark:text-gray-400">
+                        <h2 class="mb-6 text-sm font-bold uppercase text-mainColor">Legal</h2>
+                        <ul class="font-medium text-slate-300">
                             <li class="mb-4">
                                 <a href="https://www.termsfeed.com/live/9f62ba17-d3cb-442a-b99e-32163c4d494d"
                                     class="hover:underline">Privacy Policy</a>
@@ -631,11 +677,11 @@
             </div>
             <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
             <div class="sm:flex sm:items-center sm:justify-between">
-                <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2024 <a href="#"
-                        class="hover:underline">Adha Mastito</a>. All Rights Reserved.
+                <span class="text-sm text-slate-300 sm:text-center">© 2024 <a href="#" class="hover:underline">Adha
+                        Mastito</a>. All Rights Reserved.
                 </span>
                 <div class="flex mt-4 sm:justify-center sm:mt-0">
-                    <a href="#" class="text-gray-400 hover:text-mainColor dark:hover:text-white">
+                    <a href="#" class="text-slate-300 hover:text-mainColor">
                         <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
                             viewBox="0 0 8 19">
                             <path fill-rule="evenodd"
@@ -644,7 +690,7 @@
                         </svg>
                         <span class="sr-only">Facebook page</span>
                     </a>
-                    <a href="#" class="text-gray-400 hover:text-mainColor dark:hover:text-white ms-5">
+                    <a href="#" class="text-slate-300 hover:text-mainColor ms-5">
                         <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
                             viewBox="0 0 21 16">
                             <path
@@ -652,7 +698,7 @@
                         </svg>
                         <span class="sr-only">Discord community</span>
                     </a>
-                    <a href="#" class="text-gray-400 hover:text-mainColor dark:hover:text-white ms-5">
+                    <a href="#" class="text-slate-300 hover:text-mainColor ms-5">
                         <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
                             viewBox="0 0 20 17">
                             <path fill-rule="evenodd"
@@ -661,7 +707,7 @@
                         </svg>
                         <span class="sr-only">Twitter page</span>
                     </a>
-                    <a href="#" class="text-gray-400 hover:text-mainColor dark:hover:text-white ms-5">
+                    <a href="#" class="text-slate-300 hover:text-mainColor ms-5">
                         <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
                             viewBox="0 0 20 20">
                             <path fill-rule="evenodd"
@@ -670,7 +716,7 @@
                         </svg>
                         <span class="sr-only">GitHub account</span>
                     </a>
-                    <a href="#" class="text-gray-400 hover:text-mainColor dark:hover:text-white ms-5">
+                    <a href="#" class="text-slate-300 hover:text-mainColor ms-5">
                         <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
                             viewBox="0 0 20 20">
                             <path fill-rule="evenodd"
